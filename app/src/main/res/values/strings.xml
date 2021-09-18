@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Melodin</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="login">Belépés</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="logout">logout</string>
+    <string name="adj_hozz_tel">Adj hozzá étel</string>
+    <string name="pricarek">Pricerek</string>
+    <string name="horeca">Horeca</string>
+    <string name="tel_adatok">Étel Adatok</string>
+    <string name="tel_ikonok">Étel Ikonok</string>
+    <string name="ingradiens">Ingradiens</string>
+    <string name="prices">Prices</string>
+    <string name="default_price">Default Price</string>
+    <string name="default_reduced_price">Default reduced price</string>
+    <string name="zs_r">Zsír</string>
+    <string name="kal_ria">Kalória</string>
+    <string name="sz_nhidr_t">Szénhidrát</string>
+    <string name="feh_rje">Fehérje</string>
+    <string name="ment_s">Mentés</string>
+    <string name="export">Export</string>
+    <string name="ttermi_napi_men">Éttermi napi menü</string>
+    <string name="sszes_tel_export">Összes étel export</string>
+    <string name="pricerek">Pricerek</string>
+</resources>

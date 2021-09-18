@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ExportActivity"
+    android:background="@drawable/bg"
+   android:padding="@dimen/add_new_top_margin"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/add_new_padding"
+        android:background="@color/colorAddElementbg"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view_line_orange">
+    <View
+        android:id="@+id/view_line_orange"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@drawable/line_orange"
+
+        />
+
+        <TextView
+        android:id="@+id/tv_export"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mont_title"
+        android:padding="@dimen/add_new_padding"
+        android:text="@string/export"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/list_header_h2"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="@dimen/add_new_padding"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_export"/>
+
+    <TextView
+        android:id="@+id/tv_restaurant_daily_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mont_reg"
+        android:padding="@dimen/add_new_padding"
+        android:text="@string/ttermi_napi_men"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/list_header_h2"/>
+
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/spinner_export_daily_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/add_new_padding"
+
+        android:layout_marginRight="@dimen/add_new_padding"
+        android:background="@drawable/new_element_input_fields"
+        android:minHeight="35dp"
+        />
+
+    <Button
+        android:id="@+id/btn_export_export"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/add_new_padding"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/add_new_padding"
+        android:background="@drawable/bg_rounded_button_orange"
+
+        android:paddingLeft="@dimen/add_new_padding"
+        android:paddingRight="@dimen/add_new_padding"
+        android:text="@string/export"
+        android:fontFamily="@font/mont_button"
+        android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/btn_export_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/add_new_padding"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="@dimen/add_new_padding"
+            android:background="@drawable/bg_rounded_button_lightblue"
+
+            android:paddingLeft="@dimen/add_new_padding"
+            android:paddingRight="@dimen/add_new_padding"
+            android:text="@string/sszes_tel_export"
+            android:fontFamily="@font/mont_button"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

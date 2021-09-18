@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:padding="@dimen/add_new_root_padding"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAddElementbg"
+            android:paddingBottom="@dimen/add_new_padding">
+
+            <TextView
+                android:id="@+id/tv_new_element_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorMain"
+                android:fontFamily="@font/mont_title"
+                android:padding="@dimen/add_new_padding"
+                android:text="Új felvitele"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/list_header_h1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/layout_new_element_lenguide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_new_element_title">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/mont_button"
+                    android:text="English"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/list_header_h2" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/mont_button"
+                    android:text="Magyar"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/list_header_h2" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@drawable/new_element_top_border"
+                app:layout_constraintBottom_toTopOf="@+id/tv_new_element_name"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tv_new_element_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mont_reg"
+                android:padding="@dimen/add_new_padding"
+                android:text="Name"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/list_header_h2"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_new_element_lenguide" />
+
+            <EditText
+                android:id="@+id/et_new_element_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/add_new_padding"
+                android:layout_marginRight="@dimen/add_new_padding"
+                android:background="@drawable/new_element_input_fields"
+                android:fontFamily="@font/mont_reg"
+                android:padding="@dimen/add_new_padding"
+
+                android:text="Lorem Ipsum"
+                android:textColor="@color/colorMenuBg"
+                android:textSize="@dimen/list_header_h2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_new_element_name" />
+
+            <TextView
+                android:id="@+id/tv_new_element_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mont_reg"
+                android:padding="@dimen/add_new_padding"
+                android:text="Description"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/list_header_h2"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_new_element_name" />
+
+            <EditText
+                android:id="@+id/et_new_element_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/add_new_padding"
+
+                android:layout_marginRight="@dimen/add_new_padding"
+                android:background="@drawable/new_element_input_fields"
+                android:fontFamily="@font/mont_reg"
+                android:minLines="2"
+                android:padding="@dimen/add_new_padding"
+
+                android:text="Lorem Ipsum"
+                android:textColor="@color/colorMenuBg"
+                android:textSize="@dimen/list_header_h2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_new_element_desc" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/add_new_top_margin"
+            android:background="@color/colorAddElementbg"
+            android:paddingBottom="@dimen/add_new_top_margin">
+
+            <TextView
+                android:id="@+id/tv_food_details_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLigthBlue"
+                android:fontFamily="@font/mont_title"
+                android:padding="@dimen/add_new_padding"
+                android:text="@string/tel_adatok"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/list_header_h1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tv_new_element_horeca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mont_reg"
+                android:padding="@dimen/add_new_padding"
+                android:text="@string/horeca"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/list_header_h2"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_food_details_title" />
+
+            <EditText
+                android:id="@+id/et_new_element_horeca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/add_new_padding"
+                android:layout_marginRight="@dimen/add_new_padding"
+
+                android:background="@drawable/new_element_input_fields"
+                android:fontFamily="@font/mont_reg"
+                android:padding="@dimen/add_new_padding"
+
+                android:text="Lorem Ipsum"
+                android:textColor="@color/colorMenuBg"
+                android:textSize="@dimen/list_header_h2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_new_element_horeca" />
+
+            <TextView
+                android:id="@+id/tv_new_element_food_owner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mont_reg"
+                android:padding="@dimen/add_new_padding"
+                android:text="Food owner"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/list_header_h2"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_new_element_horeca" />
+
+            <EditText
+                android:id="@+id/et_new_element_food_owner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/add_new_padding"
+                android:layout_marginRight="@dimen/add_new_padding"
+
+                android:background="@drawable/new_element_input_fields"
+                android:fontFamily="@font/mont_reg"
+                android:padding="@dimen/add_new_padding"
+
+                android:text="Lorem Ipsum"
+                android:textColor="@color/colorMenuBg"
+                android:textSize="@dimen/list_header_h2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_new_element_food_owner" />
+
+
+            <TextView
+                android:id="@+id/tv_new_element_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mont_reg"
+                android:padding="@dimen/add_new_padding"
+                android:text="Category"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/list_header_h2"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_new_element_food_owner" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_new_element_categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/add_new_padding"
+
+                android:layout_marginRight="@dimen/add_new_padding"
+                android:background="@drawable/new_element_input_fields"
+                android:minHeight="35dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_new_element_category"
+
+
+                />
+
+            <Button
+                android:id="@+id/btn_new_element_browse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/add_new_padding"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="@dimen/add_new_padding"
+                android:background="@drawable/add_element_botton_light_blue"
+                android:paddingLeft="@dimen/add_new_padding"
+                android:paddingRight="@dimen/add_new_padding"
+                android:text="Browse..."
+                android:textColor="@color/colorWhite"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinner_new_element_categories" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_ingradiens"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/add_new_top_margin"
+            android:background="@color/colorAddElementbg"
+            android:paddingBottom="@dimen/add_new_padding">
+            >
+
+            <TextView
+                android:id="@+id/tv_new_element_food_icons_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorMain"
+                android:fontFamily="@font/mont_title"
+                android:padding="@dimen/add_new_padding"
+                android:text="@string/tel_ikonok"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/list_header_h1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tv_new_element_ingradiens"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mont_reg"
+                android:padding="@dimen/add_new_padding"
+                android:text="@string/ingradiens"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/list_header_h2"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_new_element_food_icons_title" />
+
+            <EditText
+                android:id="@+id/et_new_element_ingradiens"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/add_new_padding"
+                android:layout_marginRight="@dimen/add_new_padding"
+
+                android:background="@drawable/new_element_input_fields"
+                android:fontFamily="@font/mont_reg"
+                android:padding="@dimen/add_new_padding"
+
+                android:text="Lorem Ipsum"
+                android:textColor="@color/colorMenuBg"
+                android:textSize="@dimen/list_header_h2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_new_element_ingradiens" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/add_new_padding"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_new_element_ingradiens">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:paddingRight="@dimen/add_new_padding"
+                    android:src="@drawable/chilli" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:paddingRight="@dimen/add_new_padding"
+                    android:src="@drawable/p" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:paddingRight="@dimen/add_new_padding"
+                    android:src="@drawable/no_glass" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:paddingRight="@dimen/add_new_padding"
+                    android:src="@drawable/mushroom" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:paddingRight="@dimen/add_new_padding"
+                    android:src="@drawable/candy" />
+
+            </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/add_new_top_margin"
+            android:background="@color/colorAddElementbg"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/tv_prices_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLigthBlue"
+                android:fontFamily="@font/mont_title"
+                android:padding="@dimen/add_new_padding"
+                android:text="@string/prices"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/list_header_h1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_new_element_def_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mont_reg"
+                        android:padding="@dimen/add_new_padding"
+                        android:text="@string/default_price"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/list_header_h2"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/et_new_element_def_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="@dimen/add_new_padding"
+                        android:layout_marginRight="@dimen/add_new_padding"
+
+                        android:background="@drawable/new_element_input_fields"
+                        android:fontFamily="@font/mont_reg"
+                        android:padding="@dimen/add_new_padding"
+
+                        android:text="0000"
+
+                        android:textColor="@color/colorMenuBg"
+                        android:textSize="@dimen/list_header_h2" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_new_element_reduced_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mont_reg"
+                        android:padding="@dimen/add_new_padding"
+                        android:text="@string/default_reduced_price"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/list_header_h2"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/et_new_element_reduced_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="@dimen/add_new_padding"
+                        android:layout_marginRight="@dimen/add_new_padding"
+
+                        android:background="@drawable/new_element_input_fields"
+                        android:fontFamily="@font/mont_reg"
+                        android:padding="@dimen/add_new_padding"
+
+                        android:text="0000"
+
+                        android:textColor="@color/colorMenuBg"
+                        android:textSize="@dimen/list_header_h2" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/add_new_top_margin"
+            android:background="@color/colorAddElementbg"
+            android:orientation="vertical"
+
+
+            >
+
+            <TextView
+                android:id="@+id/tv_new_element_nutrains_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorMain"
+                android:fontFamily="@font/mont_title"
+                android:padding="@dimen/add_new_padding"
+                android:text="Nutrains"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/list_header_h1" />
+
+            <TextView
+                android:id="@+id/tv_new_element_values"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mont_reg"
+                android:padding="@dimen/add_new_padding"
+                android:text="Values"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/list_header_h2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/colorWhite" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/add_new_padding"
+
+
+                android:paddingRight="@dimen/add_new_padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".38"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/mont_reg"
+                    android:padding="@dimen/add_new_padding"
+                    android:text="@string/zs_r"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/list_header_h2" />
+
+                <EditText
+                    android:id="@+id/et_new_element_fat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".42"
+
+                    android:background="@drawable/new_element_input_fields"
+                    android:fontFamily="@font/mont_reg"
+                    android:padding="@dimen/add_new_padding"
+
+                    android:text=""
+                    android:textColor="@color/colorMenuBg"
+                    android:textSize="@dimen/list_header_h2" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/colorWhite" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/add_new_padding"
+
+
+                android:paddingRight="@dimen/add_new_padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".38"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/mont_reg"
+                    android:padding="@dimen/add_new_padding"
+                    android:text="@string/kal_ria"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/list_header_h2" />
+
+                <EditText
+                    android:id="@+id/et_new_element_calories"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".42"
+
+                    android:background="@drawable/new_element_input_fields"
+                    android:fontFamily="@font/mont_reg"
+                    android:padding="@dimen/add_new_padding"
+
+                    android:text=""
+                    android:textColor="@color/colorMenuBg"
+                    android:textSize="@dimen/list_header_h2" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/colorWhite" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/add_new_padding"
+
+
+                android:paddingRight="@dimen/add_new_padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".38"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/mont_reg"
+                    android:padding="@dimen/add_new_padding"
+                    android:text="@string/sz_nhidr_t"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/list_header_h2" />
+
+                <EditText
+                    android:id="@+id/et_new_element_carb"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".42"
+
+                    android:background="@drawable/new_element_input_fields"
+                    android:fontFamily="@font/mont_reg"
+                    android:padding="@dimen/add_new_padding"
+
+                    android:text=""
+                    android:textColor="@color/colorMenuBg"
+                    android:textSize="@dimen/list_header_h2" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/colorWhite" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/add_new_padding"
+
+
+                android:paddingRight="@dimen/add_new_padding">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".38"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/mont_reg"
+                    android:padding="@dimen/add_new_padding"
+                    android:text="@string/feh_rje"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/list_header_h2" />
+
+                <EditText
+                    android:id="@+id/et_new_element_protein"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".42"
+
+                    android:background="@drawable/new_element_input_fields"
+                    android:fontFamily="@font/mont_reg"
+                    android:padding="@dimen/add_new_padding"
+
+                    android:text=""
+                    android:textColor="@color/colorMenuBg"
+                    android:textSize="@dimen/list_header_h2" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_new_element_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/add_new_padding"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="@dimen/add_new_padding"
+
+                android:background="@drawable/add_element_botton_light_blue"
+                android:paddingLeft="@dimen/add_new_padding"
+
+                android:paddingRight="@dimen/add_new_padding"
+
+                android:text="Mégse"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_new_element_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/add_new_padding"
+
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="@dimen/add_new_padding"
+                android:background="@drawable/bg_rounded_button_orange"
+
+                android:paddingLeft="@dimen/add_new_padding"
+                android:paddingRight="@dimen/add_new_padding"
+
+
+                android:text="@string/ment_s"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

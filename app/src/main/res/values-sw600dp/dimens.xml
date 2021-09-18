@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_header_h1">32sp</dimen>
+    <dimen name="list_header_h2">28sp</dimen>
+    <dimen name="list_header_h3">17dp</dimen>
+    <dimen name="list_header_vertical_margin">12dp</dimen>
+
+    <dimen name="nav_h2">22dp</dimen>
+    <dimen name="nav_h3">17dp</dimen>
+
+    <!-- login screen sizes -->
+    <dimen name="login_layout_width">375dp</dimen>
+    <dimen name="login_padding">30dp</dimen>
+    <dimen name="login_bottom_padding">8dp</dimen>
+    <dimen name="login_iv_top_margin">110dp</dimen>
+
+
+    <dimen name="add_new_padding">18dp</dimen>
+    <dimen name="add_new_root_padding">18dp</dimen>
+
+
+
+</resources>

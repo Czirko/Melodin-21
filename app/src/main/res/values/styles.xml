@@ -1,0 +1,243 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorTopBar</item>
+        <item name="android:fontFamily">@font/mont_reg</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorOwnTopBar">@color/colorTopBar</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" >
+    </style>
+
+
+    <style name="AppTheme.MyNewStyle" parent="ThemeOverlay.AppCompat.Dark" >
+        <item name="android:background">@color/colorMenuBg</item>
+    </style>
+
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:textColorSecondary">@color/colorMain</item>
+    </style>
+
+    <style name="main_header_add_food_button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:fontFamily">@font/mont_button</item>
+
+        <item name="android:background">@drawable/bg_rounded_button_orange</item>
+    </style>
+
+    <style name="main_header_pricers_button">
+        <item name="android:background">@drawable/bg_rounded_button_lightblue</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:fontFamily">@font/mont_button</item>
+    </style>
+
+    <style name="main_header_tv_restaurant_name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/list_header_h2</item>
+        <item name="android:fontFamily">@font/mont_title</item>
+    </style>
+
+    <style name="main_header_tv_location">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:drawableLeft">@drawable/ic_location_listview_header</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/mont_reg</item>
+    </style>
+
+    <style name="main_header_tv_phone">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:drawableLeft">@drawable/ic_phone_listview_header</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/mont_reg</item>
+    </style>
+
+    <style name="main_header_rcv_displays">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="main_header_root_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <!--<item name="android:background">@color/colorPrimaryDark</item>-->
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingTop">25dp</item>
+    </style>
+
+    <style name="main_lstitem_tv_foodname">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_weight">.70</item>
+        <item name="android:paddingLeft">?android:attr/expandableListPreferredChildPaddingLeft
+        </item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/list_header_h3</item>
+        <item name="android:fontFamily">@font/mont_reg</item>
+    </style>
+
+    <style name="main_lstitem_btn_low_price">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.50</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/list_header_h3</item>
+        <item name="android:fontFamily">@font/mont_button</item>
+    </style>
+
+    <style name="main_lstitem_btn_high_price">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.50</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/list_header_h3</item>
+        <item name="android:fontFamily">@font/mont_button</item>
+    </style>
+
+    <style name="main_lstitem_imgbtn_stop">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="nav_group_tv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/listPreferredItemHeightSmall</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">?android:attr/expandableListPreferredItemPaddingLeft
+        </item>
+        <item name="android:paddingEnd">?attr/listPreferredItemPaddingRight</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">@dimen/nav_h2</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/mont_reg</item>
+    </style>
+
+    <style name="nav_child_tv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/listPreferredItemHeightSmall</item>
+        <item name="android:gravity">center|start</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:paddingLeft">30dp
+        </item>
+        <item name="android:textSize">@dimen/nav_h2</item>
+        <item name="android:fontFamily">@font/mont_reg</item>
+    </style>
+
+    <style name="login_linlayout">
+        <item name="android:layout_width">@dimen/login_layout_width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="login_root_layout">
+        <item name="android:layout_width">@dimen/login_layout_width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="login_et_email">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:paddingTop">@dimen/login_padding</item>
+        <item name="android:paddingBottom">@dimen/login_bottom_padding</item>
+        <item name="android:backgroundTint">@color/colorWhite</item>
+        <item name="android:drawableStart">@drawable/user</item>
+        <item name="android:drawableLeft">@drawable/user</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:fontFamily">@font/mont_reg</item>
+        <item name="android:inputType"></item>
+        <item name="android:textSize">@dimen/list_header_h3</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textColorHint">@color/colorWhite</item>
+        <item name="android:textCursorDrawable">@xml/cursor_color_white</item>
+    </style>
+
+    <style name="login_et_psswrd">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/email_field</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:paddingTop">@dimen/login_padding</item>
+        <item name="android:paddingBottom">@dimen/login_bottom_padding</item>
+        <item name="android:backgroundTint">@color/colorWhite</item>
+        <item name="android:drawableStart">@drawable/password</item>
+        <item name="android:drawableLeft">@drawable/password</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:fontFamily">@font/mont_reg</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:textSize">@dimen/list_header_h3</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textColorHint">@color/colorWhite</item>
+        <item name="android:textCursorDrawable">@xml/cursor_color_white</item>
+    </style>
+
+    <style name="login_btn_login">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@color/colorMain</item>
+        <item name="android:layout_marginTop">@dimen/login_padding</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:fontFamily">@font/mont_button</item>7
+        <item name="android:textSize">@dimen/list_header_h3</item>
+
+    </style>
+
+
+</resources>

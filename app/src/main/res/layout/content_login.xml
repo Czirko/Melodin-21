@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".LoginActivity"
+    tools:showIn="@layout/activity_login"
+    style="@style/login_root_layout">
+
+    <LinearLayout style="@style/login_linlayout">
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            />
+
+
+        <EditText
+            android:id="@+id/email_field"
+
+            android:hint="Email"
+
+            android:text="hgy@iworkshop.hu"
+            style="@style/login_et_email" />
+
+        <EditText
+            android:id="@+id/password_field"
+
+            android:hint="Password"
+
+            android:text="melodin"
+            style="@style/login_et_psswrd" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:text="@string/login"
+            style="@style/login_btn_login" />
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

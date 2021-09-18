@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ExportActivity"
+    android:background="@drawable/bg"
+    android:padding="@dimen/add_new_top_margin"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/add_new_padding"
+        android:background="@color/colorAddElementbg"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view_line_orange">
+        <View
+            android:id="@+id/view_line_orange"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@drawable/line_light_blue"
+
+            />
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_pricers"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:fontFamily="@font/mont_title"
+            android:padding="@dimen/add_new_padding"
+            android:text="@string/pricerek"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/list_header_h2"/>
+
+    <Button
+        android:id="@+id/btn_save_pricers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:clickable="false"
+
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/mont_button"
+        android:text="Save"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/list_header_h2"
+
+        />
+
+</android.support.constraint.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="@dimen/add_new_padding"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_export"/>
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerVpricers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="30dp"
+            android:background="@color/colorAddElementbg"
+            />
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

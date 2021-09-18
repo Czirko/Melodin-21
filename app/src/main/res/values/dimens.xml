@@ -1,0 +1,32 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="nav_header_height_bigger">206dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="list_header_h1">18dp</dimen>
+
+    <dimen name="list_header_h2">14dp</dimen>
+    <dimen name="list_header_h3">11dp</dimen>
+
+
+    <dimen name="nav_h2">12dp</dimen>
+    <dimen name="nav_h3">10dp</dimen>
+
+
+    <!-- login screen sizes -->
+    <dimen name="login_layout_width">250dp</dimen>
+    <dimen name="list_header_vertical_margin">8dp</dimen>
+
+
+    <dimen name="login_iv_top_margin">60dp</dimen>
+    <dimen name="login_padding">20dp</dimen>
+    <dimen name="login_bottom_padding">5dp</dimen>
+    
+    <dimen name="add_new_padding">10dp</dimen>
+    <dimen name="add_new_top_margin">13dp</dimen>
+    <dimen name="add_new_root_padding">11dp</dimen>
+</resources>

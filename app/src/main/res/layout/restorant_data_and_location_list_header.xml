@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout_main_list_header"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    android:visibility="gone"
+    style="@style/main_header_root_layout">
+
+
+    <TextView
+        android:id="@+id/restaurant_data_textfield"
+
+        style="@style/main_header_tv_restaurant_name"
+
+        app:layout_constraintBottom_toBottomOf="@id/btn_add_food"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_add_food" />
+
+
+    <Button
+        android:id="@+id/btn_add_food"
+
+        style="@style/main_header_add_food_button"
+
+        android:text="@string/adj_hozz_tel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <Button
+        android:id="@+id/btn_pricers"
+
+        style="@style/main_header_pricers_button"
+        android:layout_marginTop="30dp"
+        android:text="@string/pricarek"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/btn_add_food"
+
+
+        app:layout_constraintTop_toBottomOf="@id/btn_add_food"
+         />
+
+    <LinearLayout
+        android:id="@+id/header_Container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/btn_pricers"
+        app:layout_constraintEnd_toStartOf="@id/btn_pricers"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_pricers">
+
+        <TextView
+            android:id="@+id/resturant_location_textView"
+            style="@style/main_header_tv_location"/>
+
+
+        <TextView
+            android:id="@+id/tv_phonenumber_restorant"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            style="@style/main_header_tv_phone" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/restaurant_recycler_display_view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_Container"
+        tools:itemCount="2"
+        style="@style/main_header_rcv_displays" />
+
+    <TextView
+        android:id="@+id/resturant_displayname_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/list_header_vertical_margin"
+        android:layout_marginBottom="@dimen/list_header_vertical_margin"
+
+        android:text="Tesztmonitor"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_recycler_display_view" />
+
+
+</android.support.constraint.ConstraintLayout>

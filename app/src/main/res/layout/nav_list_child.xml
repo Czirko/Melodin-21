@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/colorMenuBg"
+    >
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/ivNavChild"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/listPreferredItemHeightSmall"
+        android:src="@drawable/ic_nav_child_nonchoosed"
+        android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"/>
+
+    <TextView
+        android:id="@+id/tvNav_list_item"
+        android:text="lorem loretiem ipsum"
+        style="@style/nav_child_tv" />
+
+
+</LinearLayout>
